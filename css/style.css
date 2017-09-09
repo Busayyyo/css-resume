@@ -1,0 +1,186 @@
+/* Color palette
+#05668D Sea blue
+#811788 purple html
+#EDF2F4 anti-flash white
+#0B032D middle red purple 
+#028090 metallic seaweed
+----------------------------- */
+
+/* Global styles 
+
+--------------------------------*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif; 
+	margin:0;
+}  
+
+h1 {
+	font-size: 80px;
+}
+
+h2 {
+	font-size: 40px;
+	margin-top: 0;
+}
+
+h3 {
+	margin: 0;
+}
+
+h1, h2 {
+	font-family: 'Caveat', cursive;
+	font-weight: 400;
+}
+
+a {
+	color:#EDF2F4;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.content-wrap{
+	max-width:950px;
+	margin: 0 auto;
+	padding:50px;
+	overflow: auto;
+}
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+/*------------------------------*/
+
+.btn{
+	text-decoration: none;
+	background: #811788;
+	padding:10px;
+	display: inline-block;
+}
+
+/* Header and footer  
+--------------------------------*/
+header, footer {
+	background: #05668D;
+	color:#0B032D;
+}
+
+/* header
+--------------------------------*/
+header{
+	padding-top: 50px;
+	position: relative;
+}
+
+header h1, header h2{
+	margin:0;
+}
+
+.download{
+	position: absolute;
+	bottom:0;
+	right:0;
+}
+
+/* navigation
+--------------------------------*/
+nav{
+	text-align: center;
+	background:#0B032D;
+	position: fixed;
+	top:0;
+	width: 100%;
+}
+
+nav a{
+	display: inline-block;
+	padding: 15px 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.profile-img{
+	border-radius: 50%;
+	
+}
+
+/* footer 
+--------------------------------*/
+footer{
+	text-align: center;
+}
+
+.contact-info a{
+	padding: 10px;
+	display: inline-block;
+}
+
+
+/* Work experience   
+--------------------------------*/
+.work {
+	background: #028090;
+	color:#EDF2F4;
+}
+
+h3 ~ p {
+	margin:0;
+}
+
+.job-description p:first-of-type{
+	margin-top: 0;
+}
+
+/* Education  
+--------------------------------*/
+
+.education {
+	/*background:#0B032D;*/
+	background: linear-gradient(rgba(11, 3, 45, 0.5), rgba(11, 3, 45, 0.8)),
+                url(https://cdn.pixabay.com/photo/2016/06/11/05/18/graduation-1449488_960_720.jpg) no-repeat fixed;
+    background-size: cover;
+	color:#EDF2F4;
+}
+
+/* Media Queries
+---------------------------------*/
+@media(min-width: 900px) {
+	.col-wide{
+	width:70%;
+	float: left;
+	padding-left:30px;
+	
+}
+
+.col-narrow{
+	width: 30%;
+	float: left;
+	}
+
+}
+
+@media(max-width: 899px) {
+	header {
+		text-align: center;
+	}
+	.profile-img {
+		width: 200px;
+	}
+}
+
+
+
+
+
+
